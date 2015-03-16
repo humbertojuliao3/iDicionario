@@ -8,14 +8,18 @@
 
 #import "LetraAViewController.h"
 #import "LetraBViewController.h"
-
+#import "Singleton.h"
+#import "InfoDic.h"
 @implementation LetraAViewController
+
 
 
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.title = @"A";
+    Singleton *single = [Singleton sharedInstance];
+    InfoDic *part=[single.info objectAtIndex:single.position];
+    self.title = part.titulo;
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
@@ -23,7 +27,7 @@
     UIButton *botao = [UIButton
                                         buttonWithType:UIButtonTypeSystem];
     [botao
-     setTitle:@"Mostre uma palavra, uma figura e leia a palavra ao apertar um botao"
+     setTitle:part.frase
      forState:UIControlStateNormal];
     [botao sizeToFit];
     botao.center = self.view.center;
