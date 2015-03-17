@@ -13,7 +13,7 @@
 @property int position;
 
 +(id)sharedInstance;
--(void)start;
+-(NSMutableArray*)start;
 
 
 @end
