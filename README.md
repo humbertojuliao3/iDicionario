@@ -1,10 +1,10 @@
 # Desafio Bronze (Obrigatório e tem que estar perfeito)
 
-1) O código não está bem feito. Precisamos de 26 view controllers? Corrija o código; (Doing)
+1) O código não está bem feito. Precisamos de 26 view controllers? Corrija o código; (Done!)
 
 2) Faça com que cada view mostre uma letra, uma palavra e uma imagem começada com a letra; (Done!)
 
-3) Crie uma animação ao mostrar as imagens em cada página. (Doing)
+3) Crie uma animação ao mostrar as imagens em cada página. (Done!)
 
 4) Coloque um Tabbar que permita trocar a visualizacao:  (To Do)
 

@@ -34,9 +34,9 @@ static bool isFirstTime=YES;
     
     NSArray*infoTitulo=[[NSArray alloc] initWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z", nil];
     
-    NSArray*infoFrase=[[NSArray alloc] initWithObjects:@"A de avião",@"B de bola",@"C de Coração",@"D de docinho",@"E de escola",@"F de feijão",@"G de gente",@"H de humano",@"I de igualdade",@"J de juventude",@"K de kiwi",@"L de laranja",@"M de molecagem",@"N de natureza",@"O de ovo",@"P de pato",@"Q de queijo",@"R de riacho",@"S de sorvete",@"T de terra",@"U de uva",@"V de vidro",@"W de WiiU",@"X de xadrez",@"Y de Yu-Gi-Oh!",@"Z de zebra", nil];
+    NSArray*infoFrase=[[NSArray alloc] initWithObjects:@"Avião",@"Bola",@"Coração",@"Docinho",@"Escola",@"Feijão",@"Gente",@"Humano",@"Igualdade",@"Juventude",@"Kiwi",@"Laranja",@"Molecagem",@"Natureza",@"Ovo",@"Pato",@"Queijo",@"Riacho",@"Sorvete",@"Terra",@"Uva",@"Vidro",@"WiiU",@"Xadrez",@"Yu-Gi-Oh!",@"Zebra", nil];
     
-    NSArray*infoImagem=[[NSArray alloc] initWithObjects:@"a.jpg",@"b.png",@"c.jpg",@"d.jpg",@"e.png",@"f.jpg",@"g.jpg",@"h.jpg",@"i.jpg",@"j.jpg",@"k.jpg",@"l.jpg",@"m.jpg",@"n.jpg",@"o.jpg",@"p.jpg",@"q.jpg",@"r.jpg",@"s.jpg",@"t.jpg",@"u.jpg",@"v.jpg",@"w.jpg",@"x.jpg",@"y.jpg",@"z.jpg", nil];
+    NSArray*infoImagem=[[NSArray alloc] initWithObjects:@"a.jpg",@"b.jpg",@"c.jpg",@"d.jpg",@"e.jpg",@"f.jpg",@"g.jpg",@"h.jpg",@"i.jpg",@"j.jpg",@"k.jpg",@"l.jpg",@"m.jpg",@"n.jpg",@"o.jpg",@"p.jpg",@"q.jpg",@"r.jpg",@"s.jpg",@"t.jpg",@"u.jpg",@"v.jpg",@"w.jpg",@"x.jpg",@"y.jpg",@"z.jpg", nil];
     
     //inicio das atribuições
     NSMutableArray *retorno=[[NSMutableArray alloc] init];

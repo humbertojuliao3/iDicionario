@@ -10,4 +10,8 @@
 
 @interface LetraAViewController : UIViewController
 
+//@property UIButton *botao;
+@property UILabel *botao;
+@property UIImageView *imagem;
+
 @end
