@@ -15,13 +15,23 @@
     Singleton *single;
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    NSString *path=[[NSBundle mainBundle] pathForResource:[[[single.info objectAtIndex:single.position] titulo] lowercaseString] ofType:@"jpg"];
+    self.imagem.image=[UIImage imageWithContentsOfFile:path];
+    [UIView animateWithDuration:1.0 animations:^{
+        _imagem.alpha = 0.0;
+        _imagem.alpha = 1.0;
+    }];
+}
 -(void) viewDidLoad {
     [super viewDidLoad];
     single = [Singleton sharedInstance];
     
     InfoDic *part=[single.info objectAtIndex:single.position];
     
-    self.title = part.titulo;
+    self.navigationController.toolbarHidden=NO;
+    self.navigationController.title = part.titulo;
+    self.navigationController.tabBarItem.title=@"Texto Pequeno";
     UIBarButtonItem *next = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self action:@selector(next:)];
     self.navigationItem.rightBarButtonItem=next;
@@ -29,6 +39,16 @@
     UIBarButtonItem *back = [[UIBarButtonItem alloc]
                              initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem=back;
+    
+    //------tool bar itens-------
+    UIBarButtonItem *flexiableItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:nil];
+    UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
+    NSArray *items = [NSArray arrayWithObjects:item1, flexiableItem, item2, nil];
+    self.toolbarItems = items;
+    
+    
+//    self.tabBarController;
     
     _botao=[[UILabel alloc] init];
     [_botao setFrame:CGRectMake( 60.0, 200.0, 200.0, 200.0)];
@@ -48,7 +68,7 @@
     
     _imagem=[[UIImageView alloc] initWithFrame:CGRectMake( 100.0f, 150.0f, 120.0f,90.0f )];
 
-    
+//    _imagem.maskView = u;
     NSString *path=[[NSBundle mainBundle] pathForResource:[part.titulo lowercaseString] ofType:@"jpg"];
     self.imagem.image=[UIImage imageWithContentsOfFile:path];
     [_imagem setContentMode:UIViewContentModeScaleAspectFit];
@@ -61,10 +81,31 @@
 //    UITabBarController*
 
 }
-
-
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    
+    
+//    UITouch*touch=[[event allTouches] anyObject];
+//    CGPoint touchLocation=[touch locationInView:touch.view];
+//    
+//    self.imagem.center=touchLocation;
+}
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch*touch=[[event allTouches] anyObject];
+    CGPoint touchLocation=[touch locationInView:touch.view];
+    
+    self.imagem.center=touchLocation;
+}
+-(void)edit:(id)sender{
+    
+    LetraBViewController *edit = [[LetraBViewController alloc]
+                                     initWithNibName:nil
+                                     bundle:NULL];
+    [self.navigationController pushViewController:edit
+                                         animated:YES];
+    
+}
 -(void)back:(id)sender {
-//    LetraAViewController *anterior = [[LetraAViewController alloc] initWithNibName:nil bundle:NULL];
     
     if(single.position<=0){
         single.position=25;
@@ -76,18 +117,20 @@
     self.title = [[single.info objectAtIndex:single.position] titulo];
     _botao.text=[[single.info objectAtIndex:single.position] frase];
     [_botao setTextAlignment:NSTextAlignmentCenter];
-//    _botao.titleLabel.text=[[single.info objectAtIndex:single.position] frase];
-
+    
+    self.imagem.center=CGPointMake(self.view.center.x,self.view.center.y-90);
     NSString *path=[[NSBundle mainBundle] pathForResource:[proxItem.titulo lowercaseString] ofType:@"jpg"];
     self.imagem.image=[UIImage imageWithContentsOfFile:path];
     [UIView animateWithDuration:1.0 animations:^{
         _imagem.alpha = 0.0;
         _imagem.alpha = 1.0;
     }];
+    self.navigationController.tabBarItem.title=@"Texto Pequeno";
     
     
 }
 -(void)next:(id)sender {
+    
     
     if(single.position>=25){
         single.position=0;
@@ -100,20 +143,15 @@
     self.title = [[single.info objectAtIndex:single.position] titulo];
     _botao.text=[[single.info objectAtIndex:single.position] frase];
     [_botao setTextAlignment:NSTextAlignmentCenter];
-//    _botao.titleLabel.text=[[single.info objectAtIndex:single.position] frase];
     
+    self.imagem.center=CGPointMake(self.view.center.x,self.view.center.y-90);
     NSString *path=[[NSBundle mainBundle] pathForResource:[proxItem.titulo lowercaseString] ofType:@"jpg"];
     self.imagem.image=[UIImage imageWithContentsOfFile:path];
     [UIView animateWithDuration:1.0 animations:^{
         _imagem.alpha = 0.0;
         _imagem.alpha = 1.0;
     }];
-
-//    self.title = [[single.info objectAtIndex:single.position] titulo];
-//    _botao.titleLabel.text=[[single.info objectAtIndex:single.position] frase];
-//    NSString *path=[[NSBundle mainBundle] pathForResource:[[[single.info objectAtIndex:single.position] titulo] lowercaseString] ofType:@"jpg"];
-//    self.imagem.image=[UIImage imageWithContentsOfFile:path];
-    
+    self.navigationController.tabBarItem.title=@"Texto Pequeno";
     
 }
 

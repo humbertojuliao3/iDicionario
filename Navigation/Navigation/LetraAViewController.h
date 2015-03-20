@@ -13,5 +13,6 @@
 //@property UIButton *botao;
 @property UILabel *botao;
 @property UIImageView *imagem;
+@property UIToolbar *tool;
 
 @end

@@ -49,6 +49,11 @@
 		5CBEC9091AB710B0002BE3EE /* InfoDic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEC9081AB710B0002BE3EE /* InfoDic.m */; };
 		5CFA26C41AB9FD3100D62802 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CFA26C31AB9FD3100D62802 /* b.jpg */; };
 		5CFA26C61AB9FD3900D62802 /* e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CFA26C51AB9FD3900D62802 /* e.jpg */; };
+		5CFA26C81ABB182200D62802 /* Brick-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CFA26C71ABB182200D62802 /* Brick-50.png */; };
+		5CFA26CA1ABB44D700D62802 /* Brick-32-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CFA26C91ABB44D700D62802 /* Brick-32-2.png */; };
+		5CFA26D01ABB4B4500D62802 /* CellABC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFA26CF1ABB4B4500D62802 /* CellABC.m */; };
+		5CFA26D41ABB5CAC00D62802 /* ListaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFA26D31ABB5CAB00D62802 /* ListaViewController.m */; };
+		5CFA26D61ABB637A00D62802 /* ListaABC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFA26D51ABB637A00D62802 /* ListaABC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +117,14 @@
 		5CBEC9081AB710B0002BE3EE /* InfoDic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoDic.m; sourceTree = "<group>"; };
 		5CFA26C31AB9FD3100D62802 /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = b.jpg; path = ../../imagens_trab/b.jpg; sourceTree = "<group>"; };
 		5CFA26C51AB9FD3900D62802 /* e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = e.jpg; path = ../../imagens_trab/e.jpg; sourceTree = "<group>"; };
+		5CFA26C71ABB182200D62802 /* Brick-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Brick-50.png"; path = "../../../Downloads/Brick-50.png"; sourceTree = "<group>"; };
+		5CFA26C91ABB44D700D62802 /* Brick-32-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Brick-32-2.png"; path = "../../../Downloads/Brick-32-2.png"; sourceTree = "<group>"; };
+		5CFA26CB1ABB472D00D62802 /* ListaABC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaABC.h; sourceTree = "<group>"; };
+		5CFA26CE1ABB4B4500D62802 /* CellABC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellABC.h; sourceTree = "<group>"; };
+		5CFA26CF1ABB4B4500D62802 /* CellABC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellABC.m; sourceTree = "<group>"; };
+		5CFA26D21ABB5CAB00D62802 /* ListaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListaViewController.h; path = ../ListaViewController.h; sourceTree = "<group>"; };
+		5CFA26D31ABB5CAB00D62802 /* ListaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaViewController.m; path = ../ListaViewController.m; sourceTree = "<group>"; };
+		5CFA26D51ABB637A00D62802 /* ListaABC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaABC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,38 +186,19 @@
 			children = (
 				27156F5B18B76AF50053A99C /* MackenzieAppDelegate.h */,
 				27156F5C18B76AF50053A99C /* MackenzieAppDelegate.m */,
+				5CFA26D21ABB5CAB00D62802 /* ListaViewController.h */,
+				5CFA26D31ABB5CAB00D62802 /* ListaViewController.m */,
 				27156F5E18B76AF50053A99C /* Images.xcassets */,
 				27156F5318B76AF50053A99C /* Supporting Files */,
 				27156F7B18BA89430053A99C /* LetraAViewController.h */,
 				27156F7C18BA89430053A99C /* LetraAViewController.m */,
 				27156F7E18BA8B210053A99C /* LetraBViewController.h */,
 				27156F7F18BA8B210053A99C /* LetraBViewController.m */,
-				5C58002D1AB8753600AE981B /* a.jpg */,
-				5CFA26C31AB9FD3100D62802 /* b.jpg */,
-				5C58002F1AB8753600AE981B /* c.jpg */,
-				5C5800301AB8753600AE981B /* d.jpg */,
-				5CFA26C51AB9FD3900D62802 /* e.jpg */,
-				5C5800321AB8753600AE981B /* f.jpg */,
-				5C5800331AB8753600AE981B /* g.jpg */,
-				5C5800341AB8753600AE981B /* h.jpg */,
-				5C5800351AB8753600AE981B /* i.jpg */,
-				5C5800361AB8753600AE981B /* j.jpg */,
-				5C5800371AB8753600AE981B /* k.jpg */,
-				5C5800381AB8753600AE981B /* l.jpg */,
-				5C5800391AB8753600AE981B /* m.jpg */,
-				5C58003A1AB8753600AE981B /* n.jpg */,
-				5C58003B1AB8753600AE981B /* o.jpg */,
-				5C58003C1AB8753600AE981B /* p.jpg */,
-				5C58003D1AB8753600AE981B /* q.jpg */,
-				5C58003E1AB8753600AE981B /* r.jpg */,
-				5C58003F1AB8753600AE981B /* s.jpg */,
-				5C5800401AB8753600AE981B /* t.jpg */,
-				5C5800411AB8753600AE981B /* u.jpg */,
-				5C5800421AB8753600AE981B /* v.jpg */,
-				5C5800431AB8753600AE981B /* w.jpg */,
-				5C5800441AB8753600AE981B /* x.jpg */,
-				5C5800451AB8753600AE981B /* y.jpg */,
-				5C5800461AB8753600AE981B /* z.jpg */,
+				5CFA26CB1ABB472D00D62802 /* ListaABC.h */,
+				5CFA26D51ABB637A00D62802 /* ListaABC.m */,
+				5CFA26CE1ABB4B4500D62802 /* CellABC.h */,
+				5CFA26CF1ABB4B4500D62802 /* CellABC.m */,
+				5CFA26D11ABB5C4B00D62802 /* images */,
 				5CBEC9071AB710B0002BE3EE /* InfoDic.h */,
 				5CBEC9081AB710B0002BE3EE /* InfoDic.m */,
 				5CBEC9041AB70CE4002BE3EE /* Singleton.h */,
@@ -240,6 +234,41 @@
 				27156F6E18B76AF50053A99C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CFA26D11ABB5C4B00D62802 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5CFA26C91ABB44D700D62802 /* Brick-32-2.png */,
+				5CFA26C71ABB182200D62802 /* Brick-50.png */,
+				5C58002D1AB8753600AE981B /* a.jpg */,
+				5CFA26C31AB9FD3100D62802 /* b.jpg */,
+				5C58002F1AB8753600AE981B /* c.jpg */,
+				5C5800301AB8753600AE981B /* d.jpg */,
+				5CFA26C51AB9FD3900D62802 /* e.jpg */,
+				5C5800321AB8753600AE981B /* f.jpg */,
+				5C5800331AB8753600AE981B /* g.jpg */,
+				5C5800341AB8753600AE981B /* h.jpg */,
+				5C5800351AB8753600AE981B /* i.jpg */,
+				5C5800361AB8753600AE981B /* j.jpg */,
+				5C5800371AB8753600AE981B /* k.jpg */,
+				5C5800381AB8753600AE981B /* l.jpg */,
+				5C5800391AB8753600AE981B /* m.jpg */,
+				5C58003A1AB8753600AE981B /* n.jpg */,
+				5C58003B1AB8753600AE981B /* o.jpg */,
+				5C58003C1AB8753600AE981B /* p.jpg */,
+				5C58003D1AB8753600AE981B /* q.jpg */,
+				5C58003E1AB8753600AE981B /* r.jpg */,
+				5C58003F1AB8753600AE981B /* s.jpg */,
+				5C5800401AB8753600AE981B /* t.jpg */,
+				5C5800411AB8753600AE981B /* u.jpg */,
+				5C5800421AB8753600AE981B /* v.jpg */,
+				5C5800431AB8753600AE981B /* w.jpg */,
+				5C5800441AB8753600AE981B /* x.jpg */,
+				5C5800451AB8753600AE981B /* y.jpg */,
+				5C5800461AB8753600AE981B /* z.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +319,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Vinicius Miana";
 				TargetAttributes = {
+					27156F4818B76AF50053A99C = {
+						DevelopmentTeam = C3G98NPYVF;
+					};
 					27156F6318B76AF50053A99C = {
 						TestTargetID = 27156F4818B76AF50053A99C;
 					};
@@ -322,6 +354,7 @@
 				5CFA26C61AB9FD3900D62802 /* e.jpg in Resources */,
 				5C5800571AB8753600AE981B /* q.jpg in Resources */,
 				5C58004F1AB8753600AE981B /* i.jpg in Resources */,
+				5CFA26C81ABB182200D62802 /* Brick-50.png in Resources */,
 				5CFA26C41AB9FD3100D62802 /* b.jpg in Resources */,
 				5C58004A1AB8753600AE981B /* d.jpg in Resources */,
 				5C5800541AB8753600AE981B /* n.jpg in Resources */,
@@ -330,6 +363,7 @@
 				5C5800471AB8753600AE981B /* a.jpg in Resources */,
 				5C5800561AB8753600AE981B /* p.jpg in Resources */,
 				5C58005E1AB8753600AE981B /* x.jpg in Resources */,
+				5CFA26CA1ABB44D700D62802 /* Brick-32-2.png in Resources */,
 				5C58004E1AB8753600AE981B /* h.jpg in Resources */,
 				5C5800501AB8753600AE981B /* j.jpg in Resources */,
 				27156F5718B76AF50053A99C /* InfoPlist.strings in Resources */,
@@ -366,6 +400,9 @@
 			files = (
 				5CBEC9091AB710B0002BE3EE /* InfoDic.m in Sources */,
 				27156F5D18B76AF50053A99C /* MackenzieAppDelegate.m in Sources */,
+				5CFA26D41ABB5CAC00D62802 /* ListaViewController.m in Sources */,
+				5CFA26D61ABB637A00D62802 /* ListaABC.m in Sources */,
+				5CFA26D01ABB4B4500D62802 /* CellABC.m in Sources */,
 				27156F7D18BA89430053A99C /* LetraAViewController.m in Sources */,
 				27156F8018BA8B210053A99C /* LetraBViewController.m in Sources */,
 				27156F5918B76AF50053A99C /* main.m in Sources */,

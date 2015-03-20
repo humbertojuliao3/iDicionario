@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LetraBViewController : UIViewController
-
+@property UITextField *caixa;
+@property UIImageView *imagem;
 @end

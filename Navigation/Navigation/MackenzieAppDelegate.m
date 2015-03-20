@@ -8,21 +8,47 @@
 
 #import "MackenzieAppDelegate.h"
 #import "LetraAViewController.h"
+#import "ListaABC.h"
+#import "ListaViewController.h"
 
 @implementation MackenzieAppDelegate
+@synthesize tabBar;
+@synthesize navController,viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LetraAViewController *viewController = [[LetraAViewController alloc]
-                                           initWithNibName:nil
-                                           bundle:nil];
+    viewController=[[ListaViewController alloc] init];
+    navController=[[UINavigationController alloc] initWithRootViewController:viewController];
+    [_window addSubview:[navController view]];
+    //------Inicio do que funciona-----
+    self.tabBar=[[UITabBarController alloc] init];
     
+    ListaViewController*table=[[ListaViewController alloc] initWithNibName:nil bundle:nil];
     
-    self.navigationController = [[UINavigationController alloc]
-                                 initWithRootViewController:viewController];
+    LetraAViewController *viewControllerA = [[LetraAViewController alloc] initWithNibName:nil bundle:nil];
+    ListaABC *lista=[[ListaABC alloc] initWithNibName:nil bundle:nil];
+    
+//    NSArray *viewArray=[NSArray arrayWithObjects:viewControllerA,viewControllerB, nil];
+    self.navigationControllerA = [[UINavigationController alloc]
+                                 initWithRootViewController:viewControllerA];
+    self.navigationControllerB = [[UINavigationController alloc]
+                                 initWithRootViewController:lista];
+    
+    NSArray *viewArray=[NSArray arrayWithObjects:self.navigationControllerA,table, nil];
+    
+    self.tabBar.viewControllers=viewArray;
+    
+    UIImage *image=[UIImage imageNamed:@"Brick-32-2.png"];
+    
+    viewControllerA.navigationController.tabBarItem.title=@"Palavra";
+    viewControllerA.navigationController.tabBarItem.image=image;
+    table.tabBarItem.title=@"Dicionário";
+    table.tabBarItem.image=image;
+//    lista.navigationController.tabBarItem.image=image;
+    
     self.window = [[UIWindow alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = self.navigationController;
+    self.window.rootViewController = self.tabBar;
 
 
     
@@ -59,5 +85,12 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+     //-------Precisa?-----
+//-(void)dealloc{
+//    [navController release];
+//    [_window release];
+//    [super dealloc];
+//}
+
 
 @end
