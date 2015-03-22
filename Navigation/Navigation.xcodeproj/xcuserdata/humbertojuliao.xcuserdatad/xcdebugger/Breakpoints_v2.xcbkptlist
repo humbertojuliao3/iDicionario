@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Navigation/LetraAViewController.m"
-            timestampString = "448585347.920272"
+            timestampString = "448754941.310614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "-back:"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "-edit:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Navigation/LetraAViewController.m"
-            timestampString = "448585347.920272"
+            timestampString = "448754941.310614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "-next:"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "-back:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

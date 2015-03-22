@@ -42,9 +42,8 @@
     
     //------tool bar itens-------
     UIBarButtonItem *flexiableItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:nil];
-    UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
-    NSArray *items = [NSArray arrayWithObjects:item1, flexiableItem, item2, nil];
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(edit:)];
+    NSArray *items = [NSArray arrayWithObjects:item1, flexiableItem, nil];
     self.toolbarItems = items;
     
     
@@ -83,12 +82,17 @@
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     
-    
+//    [UIView animateWithDuration:0.1 animations:^{
+//        _imagem.superview
+//    } ];
     
 //    UITouch*touch=[[event allTouches] anyObject];
 //    CGPoint touchLocation=[touch locationInView:touch.view];
 //    
 //    self.imagem.center=touchLocation;
+}
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    
 }
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch*touch=[[event allTouches] anyObject];

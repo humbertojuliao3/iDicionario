@@ -11,4 +11,6 @@
 @interface LetraBViewController : UIViewController
 @property UITextField *caixa;
 @property UIImageView *imagem;
+@property UILabel *asd;
+@property UIButton *botao;
 @end
